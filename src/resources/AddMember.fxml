@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" fillWidth="false" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #17202A;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AddMember" VBox.vgrow="ALWAYS">
+   <children>
+      <VBox alignment="TOP_CENTER" spacing="40.0" style="-fx-background-color: #1e293b; -fx-background-radius: 12px;" styleClass="shadow">
+         <children>
+            <HBox alignment="TOP_CENTER">
+               <children>
+                  <HBox alignment="CENTER_LEFT">
+                     <children>
+                        <Label alignment="CENTER" text="ADD" textFill="WHITE">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Label>
+                        <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="2.0" style="-fx-background-color: #b2611e;">
+                           <HBox.margin>
+                              <Insets left="12.0" right="12.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <HBox spacing="8.0">
+                           <children>
+                              <Button mnemonicParsing="false" prefHeight="46.0" style="-fx-background-color: #f5b041; -fx-text-fill: #022416;" styleClass="active" text="Member">
+                                 <font>
+                                    <Font name="Verdana" size="18.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="12.0" right="12.0" />
+                                 </padding>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <VBox alignment="TOP_CENTER" fillWidth="false" spacing="20.0">
+               <children>
+                  <HBox prefWidth="400.0" spacing="12.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="36.0" prefWidth="120.0" style="-fx-border-color: #EB984E; -fx-background-color: #F5B041;" text="ID" textFill="#022416">
+                           <font>
+                              <Font name="Trebuchet MS" size="17.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="memberId" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="260.0" promptText="Enter member ID" style="-fx-border-color: #F5B041; -fx-background-color: none; -fx-text-fill: white;">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox prefWidth="400.0" spacing="12.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="36.0" prefWidth="120.0" style="-fx-border-color: #EB984E; -fx-background-color: #F5B041;" text="Name" textFill="#022416">
+                           <font>
+                              <Font name="Trebuchet MS" size="17.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="memberName" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="260.0" promptText="Enter member name" style="-fx-border-color: #F5B041; -fx-background-color: none; -fx-text-fill: white;">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <HBox alignment="TOP_CENTER">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#clickAddButton" prefHeight="40.0" prefWidth="176.0" style="-fx-background-color: #F39C12;" text="ADD MEMBER">
+                     <font>
+                        <Font name="Trebuchet MS" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="60.0" left="40.0" right="40.0" top="40.0" />
+         </padding>
+      </VBox>
+   </children>
+   <padding>
+      <Insets top="70.0" />
+   </padding>
+</VBox>
